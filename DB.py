@@ -2,7 +2,7 @@ import pymysql
 import PhoneDatabase as PhoneDatabase
 
 def main():
-    db = pymysql.connect("localhost","bryan", "1234","numbers" )
+    db = pymysql.connect("localhost","guest", "1234","numbers" )
     cursor = db.cursor()
     runProgram(cursor, db);
     db.close()

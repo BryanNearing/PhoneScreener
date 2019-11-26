@@ -3,7 +3,7 @@ import pymysql
 class PhoneDatabase:
 
     def __init__(self):
-        self.db = pymysql.connect("localhost", "bryan", "1234", "numbers")
+        self.db = pymysql.connect("localhost", "guest", "1234", "numbers")
         self.cursor = self.db.cursor()
         self.cursor.execute("Select * from fwdnum")
         ans = self.cursor.fetchall()
